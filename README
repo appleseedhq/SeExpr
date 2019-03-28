@@ -3,19 +3,15 @@ SeExpr - An embeddable expression evaluation engine
 ===================================================================
 
 
-Super impatient CMake building and installing guide
+Super impatient CMake building and installing guide for Appleseed
 ===================================================
-$ git clone https://github.com/wdas/SeExpr
+$ git clone https://github.com/termhn/SeExpr
 $ cd SeExpr
+$ git checkout appleseed-qt5
 $ mkdir build
 $ cd build 
-$ cmake ../
-$ make doc      # optional make documentation
+$ cmake -DCMAKE_PREFIX_PATH=/path/to/qt5/root ..
 $ make install
-
-You can try the test application asciiGraph which is a simple
-function grapher... e.g.
-./asciiGraph "x^3-8*x"
 
 Getting started
 ---------------
